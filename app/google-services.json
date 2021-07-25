@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993345430629",
+    "project_id": "swiftemergency-1d1f2",
+    "storage_bucket": "swiftemergency-1d1f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993345430629:android:39d0f2149713d22c77d28c",
+        "android_client_info": {
+          "package_name": "com.whitney.swiftemergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993345430629-kkkk655a4qn82e3cns1og40tmk96f0ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRxB2q-JZd9GE1y9mvc-6_6Dn2a5vOh_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993345430629-kkkk655a4qn82e3cns1og40tmk96f0ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
