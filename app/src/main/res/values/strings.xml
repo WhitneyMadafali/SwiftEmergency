@@ -20,6 +20,10 @@
     <string name="reset_password">Reset Password</string>
     <string name="your_name">Your Name</string>
     <string name="your_email_address">Your Email Address</string>
+    <string name="change_profileText">Change Profile</string>
+    <string name="profilepic">profilePic</string>
+    <string name="changepicDes">changePic</string>
+    <string name="saveButton">Save</string>
 
 
 </resources>
