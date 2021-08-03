@@ -25,5 +25,18 @@
     <string name="changepicDes">changePic</string>
     <string name="saveButton">Save</string>
 
+    <string name="emergency_services">EMERGENCY SERVICES</string>
+    <string name="fire">FIRE</string>
+    <string name="police">POLICE</string>
+    <string name="ambulance">AMBULANCE</string>
+    <string name="road_accidents">ROAD ACCIDENTS</string>
+    <string name="floods">FLOODS</string>
+    <string name="fireimage">fireImage</string>
+    <string name="policeimage">policeImage</string>
+    <string name="ambulanceimage">ambulanceImage</string>
+    <string name="accidentimage">accidentImage</string>
+    <string name="floodsimage">floodsImage</string>
+    <string name="violence">VIOLENCE</string>
+
 
 </resources>
