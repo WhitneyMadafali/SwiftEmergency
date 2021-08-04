@@ -25,11 +25,11 @@
     <string name="changepicDes">changePic</string>
     <string name="saveButton">Save</string>
 
-    <string name="emergency_services">EMERGENCY SERVICES</string>
+    <string name="emergency_services">SELECT SERVICE</string>
     <string name="fire">FIRE</string>
     <string name="police">POLICE</string>
     <string name="ambulance">AMBULANCE</string>
-    <string name="road_accidents">ROAD ACCIDENTS</string>
+    <string name="road_accidents">ROAD ACCIDENT</string>
     <string name="floods">FLOODS</string>
     <string name="fireimage">fireImage</string>
     <string name="policeimage">policeImage</string>

@@ -37,24 +37,11 @@ public class MapFragment extends Fragment {
             @Override
             public void onMapReady(@NonNull GoogleMap googleMap) {
                 //when map is loaded
-                googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-                    @Override
-                    public void onMapClick(@NonNull LatLng latLng) {
-                        //When clicked on map
-                        //Initialize marker options
-                        MarkerOptions markerOptions = new MarkerOptions();
-                        //set position
-                        markerOptions.position(latLng);
-                        //set title
-                        markerOptions.title(latLng.latitude + ":" + latLng.longitude);
-                        //Zoom the marker
-                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
-                                latLng, 10
-                        ));
-                        //Add marker on map
+                LatLng hospital1 = new LatLng(-1.309,  36.815);
+                googleMap.addMarker(new MarkerOptions().position(hospital1).title("Strathmore Clinic"));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLng(hospital1));
 
-                    }
-                });
+
             }
         });
 

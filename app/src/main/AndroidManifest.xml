@@ -4,9 +4,8 @@
     package="com.whitney.swiftemergency">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,19 +15,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwiftEmergency"
         tools:ignore="AllowBackup">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD4yGlF4qX48OsjO1m7gmBTsKxS4AfquX4"/>
+            android:value="AIzaSyD4yGlF4qX48OsjO1m7gmBTsKxS4AfquX4" />
 
         <activity
             android:name=".Map1"
             android:exported="true" />
-        <activity android:name=".ActivityOne" />
         <activity android:name=".Services" />
         <activity android:name=".EditProfile" />
         <activity android:name=".Login" />
-        <activity android:name=".Register"
+        <activity
+            android:name=".Register"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
