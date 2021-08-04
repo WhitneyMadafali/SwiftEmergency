@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Button resendCode;
     Button resetPassLocal,changeProfileImage;
     FirebaseUser user;
-    ImageView profileImage;
+    ImageView profileImage, helpSos;
     StorageReference storageReference;
 
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         profileImage = findViewById(R.id.profileImage);
         changeProfileImage = findViewById(R.id.changeProfile);
+        helpSos = findViewById(R.id.sos);
 
 
         fAuth = FirebaseAuth.getInstance();
@@ -118,6 +119,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
 //
 
+        });
+
+        helpSos.setOnClickListener(v -> {
+            Intent services = new Intent(MainActivity.this, Services.class);
+            startActivity(services);
         });
 
 
