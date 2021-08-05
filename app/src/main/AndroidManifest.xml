@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwiftEmergency"
         tools:ignore="AllowBackup">
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="true" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD4yGlF4qX48OsjO1m7gmBTsKxS4AfquX4" />
