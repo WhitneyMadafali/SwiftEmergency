@@ -20,25 +20,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD4yGlF4qX48OsjO1m7gmBTsKxS4AfquX4" />
 
-        <activity android:name=".Map4"
-            android:process="map4"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"/>
+        <activity android:name=".Map4"/>
 
-        <activity android:name=".Map3"
-            android:process="map3"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"/>
+        <activity android:name=".Map3"/>
 
-        <activity android:name=".Map2"
-            android:process="map2"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"/>
+        <activity android:name=".Map2"/>
 
-        <activity android:name=".Map1"
-            android:process="map1"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"/>
+        <activity android:name=".Map1"/>
 
         <activity android:name=".DetailsActivity" />
         <activity android:name=".Services" />
