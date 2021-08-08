@@ -62,7 +62,7 @@ public class MapFragment extends Fragment {
                         //setting titles
                         googleMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title(String.valueOf(title.get(i))));
                     }
-                    googleMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
+                    googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(arrayList.get(i), 10));
 
                 }
 
