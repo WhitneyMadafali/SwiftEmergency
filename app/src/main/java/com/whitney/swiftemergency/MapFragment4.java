@@ -1,11 +1,10 @@
 package com.whitney.swiftemergency;
 
-import android.content.Intent;
-import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,24 +20,23 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class MapFragment extends Fragment {
+public class MapFragment4 extends Fragment {
 
-    ArrayList<LatLng>arrayList = new ArrayList<LatLng>();
-    LatLng hospital1 = new LatLng(-1.309449,  36.814782);
-    LatLng hospital2 = new LatLng(-1.3079015, 36.8033858);
+    ArrayList<LatLng> arrayList3 = new ArrayList<LatLng>();
+    LatLng violence1 = new LatLng(-1.300707,  36.806465);
     // arraylist for names of markers
-    ArrayList<String> title = new ArrayList<String>();
+    ArrayList<String> title3 = new ArrayList<String>();
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Initialize view
-        View view = inflater.inflate(R.layout.fragment_map, container, false);
+        View view = inflater.inflate(R.layout.map_fragment4, container, false);
 
         // Initialize map fragment
         SupportMapFragment supportMapFragment = (SupportMapFragment)
-                getChildFragmentManager().findFragmentById(R.id.google_map);
+                getChildFragmentManager().findFragmentById(R.id.google_map4);
 
         //Async map
         Objects.requireNonNull(supportMapFragment).getMapAsync(new OnMapReadyCallback() {
@@ -46,35 +44,33 @@ public class MapFragment extends Fragment {
 
 
             @Override
-            public void onMapReady(@NonNull GoogleMap googleMap) {
+            public void onMapReady(@NonNull GoogleMap googleMap3) {
 
                 //when map is loaded
-                arrayList.add(hospital1);
-                arrayList.add(hospital2);
+                arrayList3.add(violence1);
                 // adding titles
 
-                title.add("Strathmore Clinic");
-                title.add("Mbaghathi Hospital");
+                title3.add("Gender Based Violence Recovery Centre K.N.H");
 
-                for (int i=0;i<arrayList.size();i++){
+                for (int p=0;p<arrayList3.size();p++){
                     //for adding markers
-                    for (int j=0;j<title.size();j++){
+                    for (int q=0;q<title3.size();q++){
                         //setting titles
-                        googleMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title(String.valueOf(title.get(i))));
+                        googleMap3.addMarker(new MarkerOptions().position(arrayList3.get(p)).title(String.valueOf(title3.get(p))));
                     }
-                    googleMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
+                    googleMap3.moveCamera(CameraUpdateFactory.newLatLng(arrayList3.get(p)));
 
                 }
 
                 // adding on click listeners for markers
-                googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                googleMap3.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(@NonNull Marker marker) {
                         String markertitle = marker.getTitle();
-                        Intent i = new Intent(MapFragment.this.getActivity(), DetailsActivity.class);
+                        Intent p = new Intent(MapFragment4.this.getActivity(), DetailsActivity.class);
                         //passing title to new activity
-                        i.putExtra("title", markertitle);
-                        startActivity(i);
+                        p.putExtra("title", markertitle);
+                        startActivity(p);
 
                         return false;
                     }
@@ -85,5 +81,6 @@ public class MapFragment extends Fragment {
         });
 
         return view;
+
     }
 }
