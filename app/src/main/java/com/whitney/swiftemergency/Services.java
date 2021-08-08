@@ -38,12 +38,27 @@ public class Services extends AppCompatActivity implements View.OnClickListener 
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
-        Intent i;
+        Intent i,p,q,r;
 
         switch (v.getId()){
             case R.id.AMBULANCE:
                 i = new Intent(this, Map1.class);
                 startActivity(i);
+                break;
+
+            case R.id.POLICE:
+                p = new Intent(this, Map2.class);
+                startActivity(p);
+                break;
+
+            case R.id.FIRE:
+                q = new Intent(this, Map3.class);
+                startActivity(q);
+                break;
+
+            case R.id.VIOLENCE:
+                r = new Intent(this, Map4.class);
+                startActivity(r);
                 break;
 
 
