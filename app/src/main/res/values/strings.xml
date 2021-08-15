@@ -41,6 +41,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="marker_title">Marker Title</string>
+    <string name="phone_contactDetails">Phone Contact</string>
+    <string name="directionsDetails">Directions</string>
+    <string name="callDetails">CALL</string>
+    <string name="get_to_locationDetails">GET TO LOCATION</string>
+    <string name="icon">icon</string>
 
 
 </resources>
