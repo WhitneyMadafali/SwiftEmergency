@@ -20,7 +20,7 @@
 
     <GridLayout
         android:id="@+id/mainGrid"
-        android:layout_width="wrap_content"
+        android:layout_width="357dp"
         android:layout_height="547dp"
         android:layout_below="@+id/title_view"
         android:layout_marginStart="20dp"
