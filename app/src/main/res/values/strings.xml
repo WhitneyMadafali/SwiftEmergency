@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SwiftEmergency</string>
+    <string name="app_name">Swift SOS</string>
     <string name="swift_response">SWIFT RESPONSE</string>
     <string name="create_new_account">Create New Account</string>
     <string name="full_name">Full Name</string>
@@ -20,6 +20,32 @@
     <string name="reset_password">Reset Password</string>
     <string name="your_name">Your Name</string>
     <string name="your_email_address">Your Email Address</string>
+    <string name="change_profileText">Change Profile</string>
+    <string name="profilepic">profilePic</string>
+    <string name="changepicDes">changePic</string>
+    <string name="saveButton">Save</string>
+
+    <string name="emergency_services">SELECT SERVICE</string>
+    <string name="fire">FIRE</string>
+    <string name="police">POLICE</string>
+    <string name="ambulance">AMBULANCE</string>
+    <string name="road_accidents">ROAD ACCIDENT</string>
+    <string name="floods">FLOODS</string>
+    <string name="fireimage">fireImage</string>
+    <string name="policeimage">policeImage</string>
+    <string name="ambulanceimage">ambulanceImage</string>
+    <string name="accidentimage">accidentImage</string>
+    <string name="floodsimage">floodsImage</string>
+    <string name="violence">VIOLENCE</string>
+    <string name="helpbutton">helpButton</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="marker_title">Marker Title</string>
+    <string name="phone_contactDetails">Phone Contact</string>
+    <string name="directionsDetails">Directions</string>
+    <string name="callDetails">CALL</string>
+    <string name="get_to_locationDetails">GET TO LOCATION</string>
+    <string name="icon">icon</string>
 
 
 </resources>
