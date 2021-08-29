@@ -35,6 +35,8 @@ public class MapFragment extends Fragment {
     ArrayList<String> title = new ArrayList<String>();
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -86,6 +88,7 @@ public class MapFragment extends Fragment {
                 googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(@NonNull Marker marker) {
+                        marker.showInfoWindow();
                         String markertitle = marker.getTitle();
                         Intent i = new Intent(MapFragment.this.getActivity(), DetailsActivity.class);
                         //passing title to new activity

@@ -22,4 +22,5 @@ public class Map1 extends AppCompatActivity {
                 .commit();
 
     }
+
 }
